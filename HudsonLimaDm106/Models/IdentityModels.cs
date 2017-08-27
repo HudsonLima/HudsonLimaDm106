@@ -29,5 +29,9 @@ namespace HudsonLimaDm106.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<HudsonLimaDm106.Models.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<HudsonLimaDm106.Models.Order> Orders { get; set; }
     }
 }
